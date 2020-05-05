@@ -1,0 +1,7 @@
+@model TodoItem // Match the 'TodoItem' model
+
+<form asp-action="AddItem" method="POST">
+    <label asp-for="Title">Add a new item:</label> <!--Match the 'title' property in the TodoItem model-->
+    <input asp-for="Title">
+    <button type="submit">Add</button>
+</form>
